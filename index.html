@@ -39,8 +39,11 @@
 </head>
 
 <body>
-    <a href="#target" uk-scroll="offset: 100"></a>
-    <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll down</a>
+
+
+    <div uk-sticky> <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll down</a></div>
+
+
     <div class="uk-container">
         <h1>Hello World</h1>
         <div class="uk-grid-medium 
@@ -233,6 +236,10 @@
             </div>
         </div>
     </div>
+    <p>
+        <button class="demo uk-button uk-button-default" type="button"
+            onclick="UIkit.notification({message: 'Hallo'})">Click me</button>
+    </p>
     <div class="uk-container">
 
         <p>
@@ -420,8 +427,9 @@
             uk-slider-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
             uk-slider-item="next"></a>
-        <a id="target" class="uk-button uk-button-primary" href="" uk-scroll="">Scroll up</a>
-        <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+    </div>
+    <div><a id="target" class="uk-button uk-button-primary" href="" uk-scroll>Scroll up</a></div>
+
 
 
 </body>
